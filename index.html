@@ -16,73 +16,41 @@
 
 <body class="m-2 bg-black">
 
-  <nav class="navbar navbar-expand-lg navbar-dark ">
-    <div class="container-fluid">
-      <!-- navbar collapse toggle -->
-      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">IMPULSE</a>
+      <button 
+         class="navbar-toggler" 
+         type="button" 
+         data-bs-toggle="collapse" 
+         data-bs-target="#navbarmenu"
+         aria-controls="navbarmenu" 
+         >
+
+         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- nav items which is also collapsed in small area -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarmenu">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#first-slide">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#second-slide" class="nav-link active">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a href="#third-slide" class="nav-link active">Blogs</a>
+            <a class="nav-link " href="#Team"> Team</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link active" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
-
-            <!-- contact form Modal -->
-            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content bg-light">
-                  <div class="modal-header ">
-                    <h5 class=" display-6 modal-title">Get in touch</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <hr>
-                  <div class="modal-body">
-                    <form action="" class="row g-3">
-                      <div class="col-md-12">
-                        <label for="inputName" class="form form-label">Name</label>
-                        <input type="text" name="inputName" id="inputName" class="form-control" required>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" required>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="inputPhone" class="form-label">Phone Number</label>
-                        <input type="tel" name="inputPhone" id="inputPhone" class="form-control" pattern="[0-9]{10}">
-                      </div>
-                      <div class="col-md-12">
-                        <label for="inputMessage" class="form-label">Message</label>
-                        <textarea name="inputMessage" id="inputMessage" rows="5" class="form-control"></textarea>
-                      </div>
-                      <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </div>
-                    </form>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <!-- end of contact form modal -->
+            <a class="nav-link " href="#blog"> Blog</a>
           </li>
+          
         </ul>
+       
       </div>
-
     </div>
   </nav>
+
+</nav>
   <!-- end of nav bar-->
 
   <div class="carousel">
