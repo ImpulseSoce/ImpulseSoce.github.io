@@ -58,56 +58,29 @@ body {
 .carousel-indicators > li {
 	display: block;
 	border-radius: 12px;
-	width: 12px;
-	height: 12px;
-	border: 2px solid white;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	opacity: 0.4;
+	transform: scale(0.65);
+	transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .carousel-indicators li.active {
 	margin-bottom: 5px;
 	background: #fff;
+	transform: scale(1.25);
 }
 
-/* Vertical Carousel Controls on Right */
-.carousel.vertical .carousel-control-prev,
-.carousel.vertical .carousel-control-next {
-	left: auto;
-	right: 13.5px;
-	width: 50px;
+.carousel span {
+	border-radius: 12px;
+	width: 10px;
+	height: 10px;
+	background: white;
+	opacity: 0.2;
 }
-.carousel.vertical .carousel-control-prev.up {
-	top: 0;
-	bottom: 50%;
-}
-.carousel.vertical .carousel-control-next.down {
-	top: 50%;
-	bottom: 0;
-}
-.carousel.vertical .carousel-control-prev.up i,
-.carousel.vertical .carousel-control-next.down i {
+
+.span {
 	position: absolute;
-	top: 50%;
-	z-index: 5;
-	display: inline-block;
-	font-size: 2em;
-}
-.carousel.vertical .carousel-control-prev.up i {
-	left: 50%;
-	margin-left: -10px;
-	top: 50%;
-	margin-top: -10px;
-}
-.carousel.vertical .carousel-control-next.down i {
-	left: 50%;
-	margin-left: -10px;
-	top: 50%;
-	margin-top: -10px;
-}
-
-/* Vertical Carousel Captions Size */
-.carousel-caption {
-	max-width: 100%;
-	width: 100%;
-	height: 85%;
-	left: 0;
+	left: -1.5rem;
 }
