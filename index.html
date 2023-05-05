@@ -21,12 +21,23 @@
     type="image/x-icon">
   <!-- Custom Css -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/loader.css">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   
 </head>
 
 <body class="m-2 bg-black">
+
+  <!--loader-->
+  <div id="load-cont">
+    <div id="load-text">Connecting nodes...</div>
+    <div class="progress-bar">
+      <div class="loaded"></div>
+    </div>
+  </div>
+  <script src="./js/loader.js"></script>
+  <!--end of loader-->
 
   <nav class="navbar navbar-expand-lg bg-black navbar-dark">
     <div class="container">
